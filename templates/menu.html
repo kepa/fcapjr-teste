@@ -1,3 +1,4 @@
+{%load static%}
 <header class="navbar-fixed-top">
 
   <div id="preHeader" class="hidden-xs">
@@ -38,7 +39,7 @@
                   <!-- responsive navigation -->
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                   <!-- Logo -->
-                  <a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="ALABAMA website template" /></a>
+                  <a class="navbar-brand" href="{% url 'fcap_app:home' %}"><img src="{% static 'images/main-log.png' %}" alt="ALABAMA website template" /></a>
               </div>
               <div class="collapse navbar-collapse" id="mainMenu">
                   <!-- Main navigation -->

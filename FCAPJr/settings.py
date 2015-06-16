@@ -42,6 +42,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'FCAPJr.fcap_app',
+    'djangobower',
+    'debug_toolbar',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -110,3 +112,16 @@ STATIC_ROOT = config('STATIC_ROOT', default=BASE_DIR.child('staticfiles'))
 STATIC_URL = config('STATIC_URL', default='/static/')
 
 STATICFILES_DIRS = (BASE_DIR.child('static'), )
+
+#bower
+
+BOWER_COMPONENTS_ROOT = config('BOWER_COMPONENTS_ROOT',
+                               default=join(BASE_DIR, '..', 'vendor'))
+
+BOWER_INSTALLED_APPS = (
+    'jquery#2.1.1',
+    'bootstrap#3.1.0',
+    'mustache#0.8.2',
+    'bootstrap-checkbox#1.1.7',
+    'jquery.cookie#1.4.1',
+)

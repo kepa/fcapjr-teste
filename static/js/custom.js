@@ -3,7 +3,7 @@
 /*jshint strict: true */
 
 
-
+{% load static %}
 /*************** COLORS TO BE ERASED WHEN INSTALLING THE THEME ***********/
 
 $(document).ready(function() {  
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
     var s = document.createElement("script");
     s.type = "text/javascript";
-    s.src = "js-plugin/jquery-cookie/jquery.cookie.js";
+    s.src = "{% static 'js-plugin/jquery-cookie/jquery.cookie.js' %}";
     $("body").append(s);  
 
 
