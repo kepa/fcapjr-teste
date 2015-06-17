@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+#Banner (img,descricao)
+#Area de membros (nome da area e membros)
+#membro (nome, cargo)
