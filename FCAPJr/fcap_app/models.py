@@ -12,7 +12,7 @@ class Banner(models.Model):
                                  blank=True, null=True)
 
     def __unicode__(self):
-        pass
+        return unicode(self.descricao) or u''
 
 
 class Area(models.Model):
@@ -24,7 +24,7 @@ class Area(models.Model):
         verbose_name_plural = "Areas"
 
     def __unicode__(self):
-        pass
+        return unicode(self.nome) or u''
 
 
 class Membro(models.Model):
@@ -41,5 +41,5 @@ class Membro(models.Model):
         verbose_name_plural = "Membros"
 
     def __unicode__(self):
-        pass
+        return unicode(self.nome) or u''
 

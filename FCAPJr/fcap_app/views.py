@@ -1,6 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views.generic import ListView
+from .models import Banner
 
-def home(request):
+
+class BannersView(ListView):
+	model = Banner
 	template_name = 'index.html'
-	return render(request, template_name,)
+
+
+home = BannersView.as_view()
