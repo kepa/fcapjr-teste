@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import (Banner, Area, Membro)
 
-# Register your models here.
+admin.site.register([Banner, Area, Membro])
+
