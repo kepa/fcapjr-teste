@@ -5,8 +5,12 @@ from .models import Banner
 
 
 class BannersView(ListView):
-	model = Banner
-	template_name = 'index.html'
+    model = Banner
+    template_name = 'index.html'
+
+    # def get_queryset(self):
+    #     queryset = super(BannersView, self).get_queryset()
+    #     return queryset
 
 
 home = BannersView.as_view()

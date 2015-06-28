@@ -125,3 +125,5 @@ BOWER_INSTALLED_APPS = (
     'bootstrap-checkbox#1.1.7',
     'jquery.cookie#1.4.1',
 )
+MEDIA_ROOT = os.path.join(BASE_DIR, 'fcap_app', 'media')
+MEDIA_URL = '/media/'
