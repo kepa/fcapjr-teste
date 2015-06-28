@@ -8,8 +8,8 @@ from django.db import models
 class Banner(models.Model):
 
     imagem = models.ImageField(
-        verbose_name='Imagem',
-        upload_to='images'
+        verbose_name='Imagem', upload_to='images',
+        blank=True, null=True
     )
     descricao = models.TextField('Descricao', max_length=255,
                                  blank=True, null=True)
@@ -30,6 +30,21 @@ class Area(models.Model):
         return unicode(self.nome) or u''
 
 
+class Essence(models.Model):
+
+    imagem = models.ImageField(
+        verbose_name='Imagem', upload_to='images',
+        blank=True, null=True
+    )
+    title = models.CharField(
+        'Missao', max_length=255, blank=True, null=True)
+    descricao = models.TextField(
+        'Missao', max_length=255, blank=True, null=True)
+
+    def __unicode__(self):
+        return unicode(self.title) or u''
+
+
 class Membro(models.Model):
 
     area = models.ForeignKey(Area)
@@ -45,4 +60,3 @@ class Membro(models.Model):
 
     def __unicode__(self):
         return unicode(self.nome) or u''
-
