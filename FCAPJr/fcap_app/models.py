@@ -30,21 +30,6 @@ class Area(models.Model):
         return unicode(self.nome) or u''
 
 
-class Essence(models.Model):
-
-    imagem = models.ImageField(
-        verbose_name='Imagem', upload_to='images',
-        blank=True, null=True
-    )
-    title = models.CharField(
-        'Missao', max_length=255, blank=True, null=True)
-    descricao = models.TextField(
-        'Missao', max_length=255, blank=True, null=True)
-
-    def __unicode__(self):
-        return unicode(self.title) or u''
-
-
 class Membro(models.Model):
 
     area = models.ForeignKey(Area)
@@ -60,3 +45,61 @@ class Membro(models.Model):
 
     def __unicode__(self):
         return unicode(self.nome) or u''
+
+################## Missao, visao, valores ##################
+
+class Mission(models.Model):
+
+    image = models.ImageField(
+        verbose_name='Imagem', upload_to='images',
+        blank=True, null=True
+    )
+    title = models.CharField(
+        'Titulo', max_length=255, blank=True, null=True)
+
+    description = models.TextField(
+        'Missao', max_length=255, blank=True, null=True)
+
+    def __unicode__(self):
+        return unicode(self.title) or u''
+
+
+class Vision(models.Model):
+
+    image = models.ImageField(
+        verbose_name='Imagem', upload_to='images',
+        blank=True, null=True
+    )
+    title = models.CharField(
+        'Titulo', max_length=255, blank=True, null=True)
+
+    description = models.TextField(
+        'Visao', max_length=255, blank=True, null=True)
+
+    def __unicode__(self):
+        return unicode(self.title) or u''
+
+
+class ValueDescription(models.Model):
+    # associatedImage = models.ManyToManyField(Value)
+    description = models.TextField(
+        'Descricao', max_length=255, blank=True, null=True)
+
+    def __unicode__(self):
+        return unicode(self.description) or u''
+
+
+class Value(models.Model):
+
+    image = models.ImageField(
+        verbose_name='Imagem', upload_to='images',
+        blank=True, null=True
+    )
+
+    title = models.CharField(
+        'Titulo', max_length=255, blank=True, null=True)
+
+    Values = models.ManyToManyField(ValueDescription)
+
+    def __unicode__(self):
+        return unicode(self.title) or u''
