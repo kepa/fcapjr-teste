@@ -7,15 +7,18 @@ from django.db import models
 
 class Banner(models.Model):
 
-    imagem = models.ImageField(
+    image = models.ImageField(
         verbose_name='Imagem', upload_to='images',
         blank=True, null=True
     )
-    descricao = models.TextField('Descricao', max_length=255,
+
+    title = models.TextField('Titulo', max_length=25, blank=True, null=True)
+
+    description = models.TextField('Descricao', max_length=255,
                                  blank=True, null=True)
 
     def __unicode__(self):
-        return unicode(self.descricao) or u''
+        return unicode(self.title) or u''
 
 
 class Area(models.Model):
@@ -99,7 +102,7 @@ class Value(models.Model):
     title = models.CharField(
         'Titulo', max_length=255, blank=True, null=True)
 
-    Values = models.ManyToManyField(ValueDescription)
+    valuesDescription = models.ManyToManyField(ValueDescription)
 
     def __unicode__(self):
         return unicode(self.title) or u''
