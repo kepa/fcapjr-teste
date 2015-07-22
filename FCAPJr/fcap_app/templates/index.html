@@ -12,7 +12,10 @@
               </div>
               <div class="row">
                   <div class="col-md-12 text-center">
-                      <div class="box"> <a href="portfolio-masonery.html" class="btn btn-lg">Portolio</a> &nbsp; <a href="#" class="btn btn-lg btn-border">Entre em Contato</a> </div>
+                      <div class="box"> 
+                        <a href="#portfolio" class="btn btn-lg">Portfólio</a> &nbsp; 
+                        <a href="#contato" class="btn btn-lg btn-border">Entre em Contato</a> 
+                      </div>
                   </div>
               </div>
           </div>
@@ -33,27 +36,31 @@
               <div class="col-md-4 col-sm-12">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="100">
                       <a href="#">
-                          <div class="imgBorder"> <img class="{% static 'img-circle img-responsive' %}" src="{% static 'images/team/team-corporate-1.jpg' %}" alt="" /> </div>
-                          <h2>Missao</h2>
-                          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas molestiae, provident ea et a laborum delectus earum esse dolore commodi voluptatibus, temporibus optio hic, iure blanditiis quas perspiciatis molestias doloribus.</p>
+                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> </div>
+                        <h2>{{ view.mission.title }}</h2>
+                        <p> {{ view.mission.description }}</p>
                       </a>
                   </article>
               </div>
               <div class="col-md-4 col-sm-12">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="200">
                       <a href="#">
-                          <div class="imgBorder"> <img class="img-circle img-responsive" src="{% static 'images/team/team-corporate-2.jpg' %} " alt="" /> </div>
-                          <h2>Visao </h2>
-                          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam deleniti cupiditate accusantium autem accusamus dolorem quasi laborum nesciunt tenetur ab iusto aliquid fuga natus doloribus inventore, porro! Ad dolore, veniam! </p>
+                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.vision.image.url }}" alt="" /> </div>
+                        <h2>{{ view.vision.title }}</h2>
+                        <p> {{ view.vision.description }}</p>
                       </a>
                   </article>
               </div>
               <div class="col-md-4 col-sm-12">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="300">
                       <a href="#">
-                          <div class="imgBorder"> <img class=" {% static 'img-circle img-responsive' %}" src="{% static 'images/team/team-corporate-3.jpg' %}" alt="" /> </div>
-                          <h2>Valores</h2>
-                          <p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo veniam soluta, distinctio! Quaerat maiores quis nam dolore, corporis enim, aut voluptatem? Placeat odio corrupti sapiente voluptatum, doloribus fuga voluptate assumenda! </p>
+                        <div class="imgBorder"> 
+                          <img class="img-circle img-responsive" src="{{ view.values.image.url }}" alt="" /> 
+                        </div>
+                        <h2>{{ view.values.title }}</h2>
+                        {% for value in view.values.valuesDescription.all %}
+                          <p> {{ value.description }}</p>
+                        {% endfor %}
                       </a>
                   </article>
               </div>
@@ -62,7 +69,7 @@
   </section>
   <!-- / services -->
   <!-- works -->
-  <section class="pt40 color1" data-nekoanim="fadeInUp" data-nekodelay="400">
+  <section id="portfolio" class="pt40 color1" data-nekoanim="fadeInUp" data-nekodelay="400">
       <div class="container">
           <div class="row">
               <div class="col-md-12 text-center mb40">
@@ -71,20 +78,30 @@
               </div>
           </div>
       </div>
-{% for x in object_list %}
+      {% for obj in view.banners %}
       <div id="homePortfolio" class="imgHover clearfix portfolioMosaic mosaic5 mosaicMoreLink neko-hover-1">
         <article>
-            <figure class="minimalBox"> <img alt="" src="{{x.imagem.url}}" class="img-responsive">
+            <figure class="minimalBox"> <img alt="" src="{{obj.image.url}}" class="img-responsive">
                 <figcaption>
+
                     <div class="pinInfo">
-                        <h3>Full width image</h3>
-                        <p class="hidden-xs">  {{x.descricao}}</p>
+                        <h3>{{ obj.title }}</h3>
+                        <p class="hidden-xs">  {{obj.description}} </p>
                     </div>
-                    <div class="iconLinks"> <a href="portfolio-project-fullwidth-image.html" title="link"><i class="icon-picture"></i></a> <a href="{% static 'images/portfolio/zoom6.jpg' %}" class="image-link" title="Zoom"><i class="icon-search"></i></a> </div>
+
+                    <!-- <div class="iconLinks"> 
+                      <a href="portfolio-project-fullwidth-image.html" title="link">
+                        <i class="icon-picture"></i>
+                      </a>
+                      <a href="{% static 'images/portfolio/zoom6.jpg' %}" class="image-link" title="Zoom">
+                        <i class="icon-search"></i>
+                      </a>
+                    </div> -->
+
                 </figcaption>
             </figure>
         </article>
-{% endfor %}
+      {% endfor %}
       </div>
   </section>
   <!-- / works -->
@@ -182,7 +199,7 @@
   </section>
   <!-- / parallax -->
   <!-- contact -->
-  <section class="mt40 mb40" data-nekoanim="fadeInUp" data-nekodelay="400">
+  <section id="contato" class="mt40 mb40" data-nekoanim="fadeInUp" data-nekodelay="400">
       <div class="container">
           <div class="row">
               <div class="col-md-12 text-center mb40">
