@@ -11,13 +11,19 @@ class IndexView(TemplateView):
     	return Banner.objects.all()
 
     def mission(self):
-    	return Mission.objects.all()[0]
+    	mission = Mission.objects.all()
+    	if mission.count() > 0:
+    		return mission[0]
 
     def vision(self):
-    	return Vision.objects.all()[0]
+    	vision = Vision.objects.all()
+    	if vision.count() > 0:
+    		return vision[0]
 
     def values(self):
-    	return Value.objects.all()[0]
+    	values = Value.objects.all()
+    	if values.count() > 0:
+    		return values[0]
 
     # def get_queryset(self):
     #     queryset = super(BannersView, self).get_queryset()
