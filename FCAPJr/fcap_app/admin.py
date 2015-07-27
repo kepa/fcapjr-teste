@@ -8,5 +8,3 @@ admin.site.register([Banner, Area, Membro, ValueDescription])
 class Essence(admin.ModelAdmin):
     def has_add_permission(self, request):
         return False if self.model.objects.count() > 0 else True
-    def has_delete_permission(self, request):
-        return False
