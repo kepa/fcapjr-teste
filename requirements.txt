@@ -3,3 +3,6 @@ Unipath==1.1
 argparse==1.2.1
 python-decouple==2.3
 wsgiref==0.1.2
+django-bower
+django-debug-toolbar
+pillow

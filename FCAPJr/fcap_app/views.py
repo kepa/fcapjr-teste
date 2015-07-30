@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import redirect
+from django.core.mail import send_mail
 from django.views.generic import ListView, TemplateView
-from .models import Banner, Mission, Vision, Value
+from .models import *
 
 
 class IndexView(TemplateView):
@@ -31,3 +33,16 @@ class IndexView(TemplateView):
 
 
 home = IndexView.as_view()
+
+#enviar_email
+def enviar_email(request):
+    if(request.method == "post"):
+        nome = request.POST['name']
+        email = request.POST['email']
+        motivo = request.POST['motivo']
+        mensagem = request.POST['mensagem']
+
+        seend_mail(motivo, mensagem, "ailsoncgt@gmail.com", email, fail_silently=False);
+
+    return redirect('IndexView')
+

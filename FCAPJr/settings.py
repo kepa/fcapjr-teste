@@ -57,6 +57,11 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
+#EMAIL CONFIGS
+EMAIL_HOST = 'smtp.webfaction.com'
+EMAIL_PORT = '587'
+
+
 ROOT_URLCONF = 'FCAPJr.urls'
 
 TEMPLATES = [

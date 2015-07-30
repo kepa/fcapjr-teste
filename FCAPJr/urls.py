@@ -11,6 +11,7 @@ urlpatterns = patterns(
     # url(r'^blog/', include('blog.urls')),
     '',
     url(r'^$', include('FCAPJr.fcap_app.urls', namespace='fcap_app')),
+    url(r'^send-email/', 'FCAPJr.fcap_app.views.enviar_email', name='send-email'),
     url(r'^admin/', include(admin.site.urls)),
 )
 if settings.DEBUG:

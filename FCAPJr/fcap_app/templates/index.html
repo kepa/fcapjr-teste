@@ -22,10 +22,10 @@
       </div>
   </header>
   <!-- services -->
-  <section id="services" class="pt40 pb40">
+  <section class="pt40 pb40">
       <div class="container">
           <div class="row">
-              <div class="col-md-12 text-center mb40">
+              <div id="quemSomos" class="col-md-12 text-center mb40">
                   <h1>Consultoria para empresas</h1>
                   <h2 class="subTitle">breve descricao</h2>
               </div>
@@ -69,7 +69,7 @@
   </section>
   <!-- / services -->
   <!-- works -->
-  <section id="portfolio" class="pt40 color1" data-nekoanim="fadeInUp" data-nekodelay="400">
+  <section id="team" class="pt40 color1" data-nekoanim="fadeInUp" data-nekodelay="400">
       <div class="container">
           <div class="row">
               <div class="col-md-12 text-center mb40">
@@ -106,7 +106,7 @@
   </section>
   <!-- / works -->
   <!-- mix -->
-  <section class="pt40 pb40">
+  <section id="evento" class="pt40 pb40">
       <div class="container">
           <div class="row">
               <div class="col-md-6" data-nekoanim="fadeIn" data-nekodelay="100">
@@ -186,7 +186,7 @@
   </section>
   <!-- / mix -->
   <!-- parallax -->
-  <section class="parallaxSection image-2" data-stellar-background-ratio="0.5">
+  <section id="servi" class="parallaxSection image-2" data-stellar-background-ratio="0.5">
       <div class="maskParent">
         <div class="bgMask"> </div>
         <div class="paralaxText" data-nekoanim="fadeInUp" data-nekodelay="400">
@@ -219,31 +219,37 @@
                       </p>
                   </address>
               </div>
-              <form method="post" action="js-plugin/neko-contact-ajax-plugin/php/form-handler.php" id="contactfrm" role="form" novalidate="novalidate">
+              <form method="POST" action="send-email/" id="contactfrm" role="form" novalidate="novalidate">
+                {% csrf_token %}
                   <div class="col-sm-4">
                       <div class="form-group">
-                          <label for="name">Name</label>
-                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
+                          <label for="name">Nome</label>
+                          <input type="text" class="form-control" name="name" id="name" placeholder="Digite seu nome" title="Please enter your name (at least 2 characters)">
                       </div>
                       <div class="form-group">
                           <label for="email">Email</label>
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email" title="Please enter a valid email address">
                       </div>
                       <div class="form-group">
-                          <label for="phone">Phone</label>
-                          <input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter email phone" title="Please enter a valid phone number (at least 10 characters)"> </div>
-                      </div>
+                          <label for="phone">Motivo do contato</label>
+                          <select class="form-control" name="motivo">
+                            <option value="">Selecione</option>
+                            <option value="bench">Benchmarking</option>
+                            <option value="outros">Outros</option>
+                          </select>
+                       </div>
+                  </div>
                       <div class="col-sm-4">
                           <div class="form-group">
-                              <label for="comments">Comments</label>
-                              <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+                              <label for="comments">Mensagem</label>
+                              <textarea name="mensagem" class="form-control" id="comments" cols="3" rows="5" placeholder="Escreva a sua mensagem…" title="Please enter your message (at least 10 characters)"></textarea>
                           </div>
                       </div>
                       <div class="col-md-8 col-md-offset-4">
                           <div class="result"></div>
-                          <button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+                          <button name="submit" type="submit" class="btn btn-lg" id="submit"> Enviar</button>
                       </div>
-                  </form>
+              </form>
               </div>
           </div>
       </section>

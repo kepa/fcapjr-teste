@@ -9,6 +9,9 @@ urlpatterns = patterns(
     # url(r'^$', 'FCAPJr.views.home', name='home'),
     'FCAPJr.fcap_app.views',
     url(r'^$', 'home', name='home'),
+    #send-email
+    url(r'^send-email/', 'enviar_email', name='send-email'),
+
 )
 
 
