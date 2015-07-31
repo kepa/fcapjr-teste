@@ -13,7 +13,15 @@
   <script> </script>
 {% endblock scripts %}
 
-<body class="activateAppearAnimation headerTransparent">
+<body id="page"class="activateAppearAnimation headerTransparent" style="background-color:white;">
+    <ul class="cb-slideshow">
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>
+            <li><span></span><div></div></li>
+        </ul>
 
 <div id="globalWrapper">
 {%block menu %}{% endblock menu %}
@@ -51,9 +59,10 @@
     <script type="text/javascript" src="{% static 'js-plugin/toucheeffect/toucheffects.js' %}"></script>
     <!-- Custom  -->
     <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
-
+    <!-- Scrool -->
     <script type="text/javascript"  src="{% static 'js/scroll.js' %}" /></script>
     <script type="text/javascript"  src="{% static 'js/jquery.js' %}" /></script>
+
 
 </body>
 
