@@ -7,7 +7,7 @@ $("#quensomos").click(function(){
 });
 
 $("#equipe").click(function(){
-	$("html, body").animate({ scrollTop: $('#team').offset().top -90 }, 700);
+	$("html, body").animate({ scrollTop: $('#equipeSection').offset().top -82 }, 700);
 });
 
 $("#events").click(function(){
