@@ -23,13 +23,13 @@
           </div>
       </div>
   </header>
-  <!-- services -->
+  <!-- quem somos -->
   <section class="pt40 pb40">
       <div class="container">
           <div class="row">
               <div id="quemSomos" class="col-md-12 text-center mb40">
-                  <h1>Consultoria para empresas</h1>
-                  <h2 class="subTitle">breve descricao</h2>
+                  <h1>Quem somos?</h1>
+                  <h2 class="subTitle">Descrição</h2>
               </div>
           </div>
       </div>
@@ -69,14 +69,63 @@
           </div>
       </div>
   </section>
-  <!-- / services -->
-  <!-- works -->
+  <!-- / quem somos -->
+
+  <!-- equipe -->
+  <section class="pt40 pb40">
+      <div class="container">
+          <div class="row">
+              <div id="equipe" class="col-md-12 text-center mb40">
+                  <h1>Nossa equipe</h1>
+                  <h2 class="subTitle">Descrição</h2>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 col-sm-12">
+                  <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="100">
+                      <a href="#">
+                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> </div>
+                        <h2>{{ view.mission.title }}</h2>
+                        <p> {{ view.mission.description }}</p>
+                      </a>
+                  </article>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                  <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="200">
+                      <a href="#">
+                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.vision.image.url }}" alt="" /> </div>
+                        <h2>{{ view.vision.title }}</h2>
+                        <p> {{ view.vision.description }}</p>
+                      </a>
+                  </article>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                  <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="300">
+                      <a href="#">
+                        <div class="imgBorder"> 
+                          <img class="img-circle img-responsive" src="{{ view.values.image.url }}" alt="" /> 
+                        </div>
+                        <h2>{{ view.values.title }}</h2>
+                        {% for value in view.values.valuesDescription.all %}
+                          <p> {{ value.description }}</p>
+                        {% endfor %}
+                      </a>
+                  </article>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- / equipe -->
+
+  <!-- eventos -->
   <section id="team" class="pt40 color1" data-nekoanim="fadeInUp" data-nekodelay="400">
       <div class="container">
           <div class="row">
               <div class="col-md-12 text-center mb40">
-                  <h1>Nosso trabalho</h1>
-                  <h2 class="subTitle">Pequena descricao</h2>
+                  <h1>Nossos Eventos</h1>
+                  <h2 class="subTitle">Aqui ficam os eventos ou serviços em destaque!</h2>
               </div>
           </div>
       </div>
@@ -106,33 +155,33 @@
       {% endfor %}
       </div>
   </section>
-  <!-- / works -->
-  <!-- mix -->
+  <!-- / eventos -->
+  <!-- serviços -->
   <section id="evento" class="pt40 pb40">
       <div class="container">
           <div class="row">
               <div class="col-md-6" data-nekoanim="fadeIn" data-nekodelay="100">
                   <h2>Nossas Habilidades</h2>
-                  <h4>Intermandated relationships</h4>
+                  <h4>Relacionamentos internos</h4>
                   <div class="progress">
                       <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"> <span>50%</span> </div>
                   </div>
-                  <h4>Goal-oriented clouds</h4>
+                  <h4>Consultoria de processos</h4>
                   <div class="progress">
                       <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;"> <span>80%</span> </div>
                   </div>
-                  <h4>Corporate bullshit</h4>
+                  <h4>Gestão administrativa</h4>
                   <div class="progress">
                       <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> <span>100%</span> </div>
                   </div>
               </div>
               <div class="col-md-6" data-nekoanim="fadeIn" data-nekodelay="300">
-                  <h2>Our services</h2>
+                  <h2>Nossos serviços</h2>
                   <ul class="nav nav-tabs" id="myTab">
-                      <li class="active"><a href="#homeTab" data-toggle="tab">Service 1</a></li>
-                      <li><a href="#profile" data-toggle="tab">Service 2</a></li>
-                      <li><a href="#messages" data-toggle="tab">Service 3</a></li>
-                      <li><a href="#settings" data-toggle="tab">Service 4</a></li>
+                      <li class="active"><a href="#homeTab" data-toggle="tab">Serviço 1</a></li>
+                      <li><a href="#profile" data-toggle="tab">Serviço 2</a></li>
+                      <li><a href="#messages" data-toggle="tab">Serviço 3</a></li>
+                      <li><a href="#settings" data-toggle="tab">Serviço 4</a></li>
                   </ul>
                   <div class="tab-content">
                       <!-- tab 1 -->
@@ -186,7 +235,7 @@
           </div>
       </div>
   </section>
-  <!-- / mix -->
+  <!-- / serviços -->
   <!-- parallax -->
   <section id="servi" class="parallaxSection image-2" data-stellar-background-ratio="0.5">
       <div class="maskParent">
