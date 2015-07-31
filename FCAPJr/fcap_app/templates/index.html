@@ -79,36 +79,68 @@
               </div>
           </div>
       </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center mb40">
+            <div class="box"> 
+              <a href="#" class="btn btn-lg">Área 1</a> &nbsp; 
+              <a href="#" class="btn btn-lg">Área 2</a> &nbsp; 
+              <a href="#" class="btn btn-lg">Área 3</a> &nbsp; 
+              <a href="#" class="btn btn-lg">Área 4</a> &nbsp; 
+              <a href="#" class="btn btn-lg">Área 5</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
           <div class="row">
-              <div class="col-md-4 col-sm-12">
+              <div class="col-md-2 col-sm-4">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="100">
                       <a href="#">
                         <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> </div>
-                        <h2>{{ view.mission.title }}</h2>
-                        <p> {{ view.mission.description }}</p>
                       </a>
                   </article>
               </div>
-              <div class="col-md-4 col-sm-12">
+              <div class="col-md-2 col-sm-4">
+                  <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="100">
+                      <a href="#">
+                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> </div>
+                      </a>
+                  </article>
+              </div>
+              <div class="col-md-2 col-sm-4">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="200">
                       <a href="#">
                         <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.vision.image.url }}" alt="" /> </div>
-                        <h2>{{ view.vision.title }}</h2>
-                        <p> {{ view.vision.description }}</p>
                       </a>
                   </article>
               </div>
-              <div class="col-md-4 col-sm-12">
+              <div class="col-md-2 col-sm-4">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="300">
                       <a href="#">
                         <div class="imgBorder"> 
                           <img class="img-circle img-responsive" src="{{ view.values.image.url }}" alt="" /> 
                         </div>
-                        <h2>{{ view.values.title }}</h2>
-                        {% for value in view.values.valuesDescription.all %}
-                          <p> {{ value.description }}</p>
-                        {% endfor %}
+                      </a>
+                  </article>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                  <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="300">
+                      <a href="#">
+                        <div class="imgBorder"> 
+                          <img class="img-circle img-responsive" src="{{ view.values.image.url }}" alt="" /> 
+                        </div>
+                      </a>
+                  </article>
+              </div>
+              <div class="col-md-2 col-sm-4">
+                  <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="300">
+                      <a href="#">
+                        <div class="imgBorder"> 
+                          <img class="img-circle img-responsive" src="{{ view.values.image.url }}" alt="" /> 
+                        </div>
                       </a>
                   </article>
               </div>
