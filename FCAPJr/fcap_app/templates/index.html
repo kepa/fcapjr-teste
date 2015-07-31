@@ -73,6 +73,8 @@
 
   <!-- equipe -->
   <section class="pt40 pb40">
+
+      <!-- <section class="parallaxSection image-2" style="background-image: url('../images/team/full-team.jpg';)">
       <div class="container">
           <div class="row">
               <div id="equipe" class="col-md-12 text-center mb40">
@@ -81,68 +83,97 @@
               </div>
           </div>
       </div>
+      </section> -->
+
+      <section id="equipeSection" class="parallaxSection image-3" data-stellar-background-ratio="0.5">
+        <div class="maskParent">
+          <div class="bgMask"> </div>
+            <div class="container">
+              <div class="row"></div>
+                <div class="paralaxText" data-nekoanim="fadeInUp" data-nekodelay="400">
+                    <h1>Nossa equipe</h1>
+                    <h3>Descrição</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-center mb40">
+                  <div class="box"> 
+                    <a href="#" class="btn btn-lg btn-border">Área 1</a> &nbsp; 
+                    <a href="#" class="btn btn-lg btn-border">Área 2</a> &nbsp; 
+                    <a href="#" class="btn btn-lg btn-border">Área 3</a> &nbsp; 
+                    <a href="#" class="btn btn-lg btn-border">Área 4</a> &nbsp; 
+                    <a href="#" class="btn btn-lg btn-border">Área 5</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
       
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center mb40">
-            <div class="box"> 
-              <a href="#" class="btn btn-lg">Área 1</a> &nbsp; 
-              <a href="#" class="btn btn-lg">Área 2</a> &nbsp; 
-              <a href="#" class="btn btn-lg">Área 3</a> &nbsp; 
-              <a href="#" class="btn btn-lg">Área 4</a> &nbsp; 
-              <a href="#" class="btn btn-lg">Área 5</a> 
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
           <div class="row">
-              <div class="col-md-2 col-sm-4">
+              <div class="col-md-3 col-sm-4">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="100">
                       <a href="#">
-                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> </div>
+                        <div class="imgBorder"> 
+                          <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> 
+                        </div>
+                        <p>membro 1</p>
                       </a>
                   </article>
               </div>
-              <div class="col-md-2 col-sm-4">
+              <div class="col-md-3 col-sm-4">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="100">
                       <a href="#">
-                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> </div>
+                        <div class="imgBorder"> 
+                          <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> 
+                        </div>
+
+                        <p>membro 2</p>
                       </a>
                   </article>
               </div>
-              <div class="col-md-2 col-sm-4">
+              <div class="col-md-3 col-sm-4">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="200">
                       <a href="#">
-                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.vision.image.url }}" alt="" /> </div>
+                        <div class="imgBorder"> 
+                          <img class="img-circle img-responsive" src="{{ view.vision.image.url }}" alt="" />
+                        </div>
+
+                        <p>membro 3</p>
                       </a>
                   </article>
               </div>
-              <div class="col-md-2 col-sm-4">
+              <div class="col-md-3 col-sm-4">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="300">
                       <a href="#">
                         <div class="imgBorder"> 
                           <img class="img-circle img-responsive" src="{{ view.values.image.url }}" alt="" /> 
                         </div>
+
+                        <p>membro 4</p>
                       </a>
                   </article>
               </div>
-              <div class="col-md-2 col-sm-4">
+              <div class="col-md-3 col-sm-4">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="300">
                       <a href="#">
                         <div class="imgBorder"> 
                           <img class="img-circle img-responsive" src="{{ view.values.image.url }}" alt="" /> 
                         </div>
+
+                        <p>membro 5</p>
                       </a>
                   </article>
               </div>
-              <div class="col-md-2 col-sm-4">
+              <div class="col-md-3 col-sm-4">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="300">
                       <a href="#">
                         <div class="imgBorder"> 
                           <img class="img-circle img-responsive" src="{{ view.values.image.url }}" alt="" /> 
                         </div>
+
+                        <p>membro 6</p>
                       </a>
                   </article>
               </div>
@@ -338,4 +369,4 @@
       </section>
       <!-- / contact -->
   </main>
-{% endblock content%}
+{% endblock content %}
