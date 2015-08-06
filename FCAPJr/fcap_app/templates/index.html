@@ -25,20 +25,23 @@
   </header>
   <!-- quem somos -->
   <section class="pt40 pb40" style="position:relative; background-color:white">
+
       <div class="container">
           <div class="row">
               <div id="quemSomos" class="col-md-12 text-center mb40">
-                  <h1>Quem somos?</h1>
-                  <h2 class="subTitle">Descrição</h2>
+                  <h3>Texto institucional aqui</h3>
               </div>
           </div>
       </div>
+
       <div class="container">
-          <div class="row">
+          <div class="row mb40">
               <div class="col-md-4 col-sm-12">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="100">
                       <a href="#">
-                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> </div>
+                        <div class="imgBorder"> 
+                          <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> 
+                        </div>
                         <h2>{{ view.mission.title }}</h2>
                         <p> {{ view.mission.description }}</p>
                       </a>
@@ -47,7 +50,9 @@
               <div class="col-md-4 col-sm-12">
                   <article class="boxIcon" data-nekoanim="fadeInUp" data-nekodelay="200">
                       <a href="#">
-                        <div class="imgBorder"> <img class="img-circle img-responsive" src="{{ view.vision.image.url }}" alt="" /> </div>
+                        <div class="imgBorder">
+                          <img class="img-circle img-responsive" src="{{ view.vision.image.url }}" alt="" />
+                        </div>
                         <h2>{{ view.vision.title }}</h2>
                         <p> {{ view.vision.description }}</p>
                       </a>
@@ -68,6 +73,75 @@
               </div>
           </div>
       </div>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 text-center mb40">
+                  <h3>Texto das premiações</h3>
+              </div>
+          </div>
+      </div>
+    
+      <div class="container mb40">
+        <div id="premios" class="imgHover clearfix portfolioMosaic mosaic4 mosaicMoreLink neko-hover-1 ">
+          <article>
+              <figure class="minimalBox"> <img alt="" src="{% static 'images/portfolio/vign1.jpg' %}" class="img-responsive">
+                <figcaption>
+
+                    <div class="pinInfo">
+                        <h3>premio 1</h3>
+                        <p class="hidden-xs">Esse premio é massa por isso, isso e aquilo</p>
+                    </div>
+                </figcaption>
+            </figure>
+          </article>
+
+          <article>
+              <figure class="minimalBox"> <img alt="" src="{% static 'images/portfolio/vign4.jpg' %}" class="img-responsive">
+                <figcaption>
+
+                    <div class="pinInfo">
+                        <h3>premio 2</h3>
+                        <p class="hidden-xs">Esse premio é massa por isso, isso e aquilo</p>
+                    </div>
+                </figcaption>
+            </figure>
+          </article>
+
+          <article>
+              <figure class="minimalBox"> <img alt="" src="{% static 'images/portfolio/zoom10.jpg' %}" class="img-responsive">
+                <figcaption>
+
+                    <div class="pinInfo">
+                        <h3>premio 3</h3>
+                        <p class="hidden-xs">Esse premio é massa por isso, isso e aquilo</p>
+                    </div>
+                </figcaption>
+            </figure>
+          </article>
+
+          <article>
+              <figure class="minimalBox"> <img alt="" src="{% static 'images/portfolio/zoom6.jpg' %}" class="img-responsive">
+                <figcaption>
+
+                    <div class="pinInfo">
+                        <h3>premio 4</h3>
+                        <p class="hidden-xs">Esse premio é massa por isso, isso e aquilo</p>
+                    </div>
+                </figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>  
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 text-center">
+                  <h3>Texto MEJ</h3>
+              </div>
+          </div>
+      </div>
+
   </section>
   <!-- / quem somos -->
 
