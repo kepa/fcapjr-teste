@@ -12,7 +12,7 @@
 {% block scripts %}
   <script> </script>
 {% endblock scripts %}
-
+</head>
 <body id="page"class="activateAppearAnimation headerTransparent" style="background-color:white;">
     <ul class="cb-slideshow">
             <li><span></span><div></div></li>
@@ -37,10 +37,10 @@
 <!-- End Document
     ================================================== -->
     <script type="text/javascript" src="{% static 'js-plugin/respond/respond.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js-plugin/jquery/jquery-1.10.2.min.js' %}"></script>
+    <!--<script type="text/javascript" src="{% static 'js-plugin/jquery/jquery-1.10.2.min.js' %}"></script>-->
     <script type="text/javascript" src="{% static 'js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js' %}"></script>
     <!-- third party plugins  -->
-    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+    <!--<script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>-->
     <script type="text/javascript" src="{% static 'js-plugin/easing/jquery.easing.1.3.js' %}"></script>
     <!-- carousel -->
     <script type="text/javascript" src="{% static 'js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js' %}"></script>
@@ -52,16 +52,27 @@
     <script type="text/javascript" src="{% static 'js-plugin/neko-contact-ajax-plugin/js/jquery.form.js' %}"></script>
     <script type="text/javascript" src="{% static 'js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js' %}"></script>
     <!-- parallax -->
-    <script type="text/javascript" src="{% static 'js-plugin/parallax/js/jquery.stellar.min.js' %}"></script>
+    <!--<script type="text/javascript" src="{% static 'js-plugin/parallax/js/jquery.stellar.min.js' %}"></script>-->
     <!-- appear -->
-    <script type="text/javascript" src="{% static 'js-plugin/appear/jquery.appear.js' %}"></script>
+    <!--<script type="text/javascript" src="{% static 'js-plugin/appear/jquery.appear.js' %}"></script>-->
     <!-- toucheeffect -->
     <script type="text/javascript" src="{% static 'js-plugin/toucheeffect/toucheffects.js' %}"></script>
     <!-- Custom  -->
     <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
     <!-- Scrool -->
     <script type="text/javascript"  src="{% static 'js/scroll.js' %}" /></script>
-    <script type="text/javascript"  src="{% static 'js/jquery.js' %}" /></script>
+    <!-- <script type="text/javascript"  src="{% static 'js/jquery.js' %}" /></script> -->
+    <!-- end -->
+    <!-- Portfolio -->
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+        <script type="text/javascript" src="{% static 'portifolio/js/jquery.hoverdir.js' %}"></script>    
+        <script type="text/javascript">
+            $(function() {
+            
+                $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+            });
+        </script>
 
 
 </body>

@@ -2,6 +2,27 @@
 {% load static %}
 
 {% block styles %}
+    <!-- Slide Parceiros -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <script src="{% static 'parceiros-slide/app.js' %}"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="{% static 'parceiros-slide/jquery.bxslider.min.js' %}"></script>
+    <!-- bxSlider CSS file -->
+    <link href="{% static 'parceiros-slide/jquery.bxslider.css' %}" rel="stylesheet" />
+
+    <!-- END -->
+
+    <!-- Filtro portfolio -->
+    <script src="{% static 'portifolio/js/filtro.js' %}"></script>
+    <!-- END -->
+    <!-- Portifolio -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' /> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'portifolio/css/demo.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'portifolio/css/style.css' %}" />
+    <script src="{% static 'portifolio/js/modernizr.custom.97074.js' %}"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="{% static 'portifolio/css/noJS.css' %}"/></noscript>
+
     <!-- Slide -->
     <link rel="stylesheet" type="text/css" href="static/css/demo.css" />
     <link rel="stylesheet" type="text/css" href="static/css/style2.css" />
@@ -19,7 +40,7 @@
     <script type="text/javascript"  src="{% static 'js/custom.js' %}"></script>
     <!-- nekoAnim-->
     <script type="text/javascript"  src="{% static 'js-plugin/appear/nekoAnim.css' %}" /></script>
-    <script type="text/javascript"  src="{% static 'js-plugin/jquery/jquery-1.10.2.min.js' %}" /></script>
+    <!-- <script type="text/javascript"  src="{% static 'js-plugin/jquery/jquery-1.10.2.min.js' %}" /></script> -->
 
     <!-- icon fonts -->
     <link type="text/css" rel="stylesheet" href="{% static 'font-icons/custom-icons/css/custom-icons.css' %}">
@@ -27,6 +48,9 @@
     <link type="text/css" rel="stylesheet" href="{% static 'css/layout.css' %}">
     <link type="text/css" id="colors" rel="stylesheet" href="{% static 'css/colors.css' %}">
     <link type="text/css" rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!-- NOSSO CSS -->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/app.css' %}">
 
     <!-- Slide -->
     <!-- <link type="text/css" rel="stylesheet" href="{% static 'css/slide/style.css' %}"> -->

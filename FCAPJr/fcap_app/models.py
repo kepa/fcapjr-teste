@@ -4,6 +4,11 @@ from django.db import models
 # Area de membros (nome da area e membros)
 # membro (nome, cargo)
 
+class Empresa(models.Model):
+    quemSomos = models.TextField(verbose_name='QuemSomos');
+
+    def __unicode__(self):
+        return "Quem Somos"
 
 class Banner(models.Model):
 

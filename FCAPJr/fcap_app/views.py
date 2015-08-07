@@ -9,6 +9,9 @@ from .models import *
 class IndexView(TemplateView):
     template_name = 'index.html'
 
+    def empresa(self):
+        return Empresa.objects.all()
+
     def banners(self):
     	return Banner.objects.all()
 

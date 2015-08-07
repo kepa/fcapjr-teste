@@ -1079,6 +1079,7 @@ label.error {
 }
 .color1 a.btn {
 	color:#fff;
+	margin-bottom: 5px;
 }
 .color1 a.btn:hover {
 	color:#fff;
@@ -1149,6 +1150,7 @@ label.error {
 }
 .color3 a.btn {
 	color:#fff;
+	margin-bottom: 5px;
 }
 .color3 a.btn:hover {
 	color:#fff;

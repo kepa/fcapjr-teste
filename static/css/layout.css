@@ -676,6 +676,7 @@ hr.lineSmall {
 	}
 	.pt40 {
 		padding-top:4em;
+		padding-bottom: 4em;
 	}
 	.boxIconServices h2 {
 		font-size:20px;
@@ -984,6 +985,7 @@ hr {
 }
 .btn-border.btn-lg {
 	padding:9px 17px;
+	margin-bottom: 5px;
 }
 .btn-border.btn-sm {
 	padding: 0px 6px;

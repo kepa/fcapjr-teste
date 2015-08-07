@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.db import models
-from .models import (Banner, Area, Membro, Mission, Vision, Value, ValueDescription)
+from .models import *
 
-admin.site.register([Banner, Area, Membro, ValueDescription])
+admin.site.register([Empresa, Banner, Area, Membro, ValueDescription])
 
 @admin.register(Mission, Vision, Value)
 class Essence(admin.ModelAdmin):

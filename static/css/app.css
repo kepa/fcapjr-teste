@@ -1,0 +1,63 @@
+*{
+	-webkit-transition: all .2s ease-in-out;
+  	-moz-transition: all .2s ease-in-out;
+  	-o-transition: all .2s ease-in-out;
+  	transition: all .2s ease-in-out;
+}
+
+
+#eventos .btn{
+	background: #538BAF !important;
+}
+
+#eventos .btn:hover{
+	background: black !important;
+}
+
+/*==================== Parceiros ==================*/
+.slide-item{
+	display: inline-block;
+}
+.img-parceiro{
+	border-radius: 50%;
+	width: 40%;
+}
+
+#slide-parceiros .img-responsive{
+	display: inline-block;
+}
+
+#slide-parceiros .texto{
+	display: inline-block;
+	width: 55%;
+	vertical-align: middle;
+	padding-left: 10px;
+	text-align: justify;
+}
+
+.bx-viewport{
+	height: 100% !important;
+}
+
+/*.bx-wrapper{
+	margin-bottom: 20px;
+}*/
+
+.bx-pager{
+	display: none;
+}
+
+#outros-parceiros{
+	text-align: center;
+}
+
+#outros-parceiros .img-outros{
+	border-radius: 50%;
+	width: 10%;
+	display: inline-block;
+}
+
+#outros-parceiros .item-outros-parceiros{
+	display: inline;
+	padding: 10px;
+}
