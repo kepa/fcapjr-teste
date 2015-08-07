@@ -423,7 +423,7 @@ ul.quickMenu li a:hover {
 	}
 	body.headerTransparent #mainHeader:not(.fixedHeader) .navbar-nav>li>a>i,
 	body.headerTransparent #mainHeader:not(.fixedHeader) .navbar-default .navbar-nav>li>a {
-		color: #fff;
+		color: #313F60;
 	}
 	/* normal header (no class on body) */
 	.navbar-nav ul {
@@ -629,7 +629,7 @@ footer h4 {
 	font-weight:300;
 }
 #footerRights {
-	background-color:#DDE6EC;
+	background-color: #2E2E2E;
 	color:#999;
 	border-top: 1px solid #ccc;
 }

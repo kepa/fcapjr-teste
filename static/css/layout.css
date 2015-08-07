@@ -1082,22 +1082,22 @@ a.btnRight {
 	background:rgba(0,0,0,0.15);
 }
 .image-0 {
-	background-image:url('../images/theme-pics/big-header.jpg');
+	background-image:url('../images/theme-pics/parallax-6.jpg');
 }
 .image-1 {
-	background-image:url('../images/theme-pics/main-logo.png');
+	background-image:url('../images/theme-pics/area1.jpg');
 }
 .image-2 {
-	background-image:url('../images/theme-pics/consultoria-empresarial.jpg');
+	background-image:url('../images/theme-pics/area2.jpg');
 }
 .image-3 {
-	background-image:url('../images/theme-pics/parallax-3.jpg');
+	background-image:url('../images/theme-pics/area3.jpg');
 }
 .image-4 {
-	background-image:url('../images/theme-pics/parallax-4.jpg');
+	background-image:url('../images/theme-pics/area4.jpg');
 }
 .image-5 {
-	background-image:url('../images/theme-pics/parallax-5.jpg');
+	background-image:url('../images/theme-pics/area5.jpg');
 }
 .image-6 {
 	background-image: url('../images/theme-pics/parallax-6.jpg');
@@ -1612,7 +1612,7 @@ ul.quickMenu li a.linkLeft {
 		float:right !important;
 	}
 	.navbar-nav>li>a {
-		font-size:12px;
+		font-size:20px;
 		font-weight:300;
 		padding:22px 11px;
 		line-height:44px;
