@@ -326,16 +326,23 @@
               </div>
           </div>
           <div class="row pb40">
+              <div>
+                <label>Endereço:</label>
+                <address>
+                    <p>
+                        <i class="icon-location"></i>&nbsp;Rua nº
+                        <br> Sport Club, Madalena - BR
+                        <br> <i class="icon-phone"></i>&nbsp;446.125.5892
+                        <br> <i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@theme.com">fcap@gmail.com</a>
+                    </p>
+                </address>
+              </div>
+
               <div class="col-sm-4">
-                  <h4>Endereço:</h4>
-                  <address>
-                      <p>
-                          <i class="icon-location"></i>&nbsp;Rua nº
-                          <br> Sport Club, Madalena - BR
-                          <br> <i class="icon-phone"></i>&nbsp;446.125.5892
-                          <br> <i class="icon-mail-alt"></i>&nbsp;<a href="mailto:little@theme.com">fcap@gmail.com</a>
-                      </p>
-                  </address>
+                  <div>
+                    <label>Faça seu diagnóstico</label>
+                    <button class="col-sm-12 btn btn-lg" style="margin-bottom: 23px">Diagnóstico</button>
+                  </div>
               </div>
               <form method="POST" action="send-email/" id="contactfrm" role="form" novalidate="novalidate">
                 {% csrf_token %}
@@ -344,29 +351,35 @@
                           <label for="name">Nome</label>
                           <input type="text" class="form-control" name="name" id="name" placeholder="Digite seu nome" title="Please enter your name (at least 2 characters)">
                       </div>
+                      
                       <div class="form-group">
                           <label for="email">Email</label>
                           <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email" title="Please enter a valid email address">
                       </div>
+
                       <div class="form-group">
-                          <label for="phone">Motivo do contato</label>
-                          <select class="form-control" name="motivo">
-                            <option value="">Selecione</option>
-                            <option value="bench">Benchmarking</option>
-                            <option value="outros">Outros</option>
-                          </select>
-                       </div>
+                         <label for="phone">Motivo do contato</label>
+                         <select class="form-control" name="motivo">
+                           <option value="">Selecione</option>
+                           <option value="bench">Benchmarking</option>
+                           <option value="outros">Outros</option>
+                         </select>
+                      </div>
+
                   </div>
                       <div class="col-sm-4">
+                          
                           <div class="form-group">
                               <label for="comments">Mensagem</label>
-                              <textarea name="mensagem" class="form-control" id="comments" cols="3" rows="5" placeholder="Escreva a sua mensagem…" title="Please enter your message (at least 10 characters)"></textarea>
+                              <textarea name="mensagem" class="form-control" id="comments" cols="3" rows="5" placeholder="Escreva a sua mensagem…" title="Please enter your message (at least 10 characters)" style="height: 183px; margin-bottom: 23px;"></textarea>
                           </div>
-                      </div>
-                      <div class="col-md-8 col-md-offset-4">
+                          
                           <div class="result"></div>
-                          <button name="submit" type="submit" class="btn btn-lg" id="submit"> Enviar</button>
+                          <button name="submit" type="submit" class="col-sm-12 btn btn-lg" id="submit"> Enviar</button>
                       </div>
+
+                      <!-- <div class="col-md-8 col-md-offset-4">
+                      </div> -->
               </form>
               </div>
           </div>
