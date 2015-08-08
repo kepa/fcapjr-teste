@@ -30,7 +30,7 @@
           <div class="row">
               <div id="quemSomos" class="col-md-12 text-center mb40">
                   <h1>Quem somos?</h1>
-                  <h2 class="subTitle">{{ view.empresa.quemSomos }}</h2>
+                  <h3 class="subTitle" style="text-align: justify;">{{ view.description.text|linebreaks }}</h3>
               </div>
           </div>
       </div>
@@ -134,11 +134,35 @@
           </article>
         </div>
       </div>  
-
+      <br />
       <div class="container">
           <div class="row">
-              <div class="col-md-12 text-center">
-                  <h3>Texto MEJ</h3>
+              <div class="col-md-12 text-center mb40">
+                  <h2 class="mb40">O que é uma empresa júnior?</h2>
+                  <h3 class="subtitle" style="text-align: justify;">Uma associação civil sem fins lucrativos gerida por alunos de graduação de uma instituição de ensino superior. O objetivo primeiro das empresas juniores é promover a melhor experiência de mercado aos alunos graduandos na instituição à qual ela é vinculada. Por esse objetivo entende-se fomentar o crescimento pessoal e profissional do aluno membro, por meio do oferecimento de serviços de qualidade e a baixo custo ao mercado.</h3>
+              </div>
+
+              <div class="col-md-12 text-center mb40">
+                  <h2 class="mb40">Origem do MEJ</h2>
+                  <h3 class="subtitle" style="text-align: justify;">O movimento Empresa Júnior surgiu na França em 1967, num período pós-guerra, em que a população estava desacreditada e o país vivia um período de recessão. Sendo assim, a França necessitava de meios para lançar, no mercado, mão de obra qualificada e com experiência, que pudesse combater a recessão e promover a criação de novas empresas. Uma das saídas encontradas pelo governo foi a implantação de Empresas Juniores nas Universidades, visando promover aos estudantes a união entre a teoria e a prática, tornando-os profissionais com experiência e perspectiva de mercado.
+                  </h3>
+              </div>
+
+              <div class="col-md-12 text-center mb40">
+                  <h2 class="mb40">Por que ser um empresário júnior?</h2>
+                  <h3 class="subtitle" style="text-align: justify;">Ao entrar em uma Empresa Júnior, o aluno busca o aperfeiçoamento para ser um profissional mais completo e capacitado no futuro. Na empresa júnior, quem participa de algum projeto, aplica na prática o conhecimento obtido nas salas de aula. Até aí, nada de muito diferenciado de outros programas e grupos oferecidos aos alunos. Mas então, onde está o diferencial? É na empresa júnior que se aprende desde o atendimento ao público até fazer a contabilidade. Vem do trabalho em equipe, em que aprendemos a dividir as tarefas, de modo a agilizar os processos e otimizá-los. Além disso, aprendemos a respeitar a individualidade de cada um, sendo que a identidade do grupo como um todo é muito importante. O grande diferencial de um empresário júnior é o fato dele desenvolver características como: iniciativa, responsabilidade, autoconfiança, ética e, acima de tudo, saber ser profissional.
+                  </h3>
+              </div>
+
+              <div class="col-md-12 text-center mb40">
+                  <h2 class="mb40">FEJEPE</h2>
+                  <h3 class="subtitle" style="text-align: justify;">A Federação das Empresas Juniores do Estado de Pernambuco (FEJEPE) é a entidade que representa as empresas juniores junto às universidades, empresas e entidades do Estado. Tem como objetivo facilitar o intercâmbio de experiências e, principalmente, auxiliar na qualificação e desenvolvimento das empresas juniores que fazem parte da federação. Além disso, a federação exerce papel de regulamentar o Movimento Empresa Júnior no Estado.</h3>
+              </div>
+
+              <div class="col-md-12 text-center mb40">
+                  <h2 class="mb40">Brasil Júnior</h2>
+                  <h3 class="subtitle" style="text-align: justify;">A Brasil Júnior - Confederação Brasileira de Empresas Juniores - tem como finalidades representar as empresas juniores em nível nacional e desenvolver o Movimento Empresa Júnior como agente de educação empresarial e gerador de novos negócios.
+                  </h3>
               </div>
           </div>
       </div>
@@ -153,7 +177,7 @@
               
               <div class="row">
                 <div class="paralaxText mb40" data-nekoanim="fadeInUp" data-nekodelay="400" style="margin-top: 450px; padding: 0;">
-                    <h1 id="title">Nossa equipe</h1>
+                    <h1 id="title">A empresa</h1>
                     <h3 id="description">Descrição gigante falando como a empresa é grande e forte, ressaltando como são unidos, unidos por uma paixão, que é dar consultoria e por isso que são tão reconhecidos. Agora o texto fala um pouco do começo tenebroso da FCAP onde tinham apenas 10 membros. Agora como não tenho mais ideia pra enrolar aqui, vou só dizer que ao redor do buraco tudo é beira! valeu falou</h3>
                 </div>
               </div>
@@ -444,21 +468,43 @@
                       </div>
 
                   </div>
-                      <div class="col-sm-4">
-                          
-                          <div class="form-group">
-                              <label for="comments">Mensagem</label>
-                              <textarea name="mensagem" class="form-control" id="comments" cols="3" rows="5" placeholder="Escreva a sua mensagem…" title="Please enter your message (at least 10 characters)" style="height: 182px; margin-bottom: 23px;"></textarea>
-                          </div>
-                          
-                          <div class="result"></div>
-                          <button name="submit" type="submit" class="col-xs-12 btn btn-lg" id="submit"> Enviar</button>
+                  
+                  <div class="col-sm-4">
+                      
+                      <div class="form-group">
+                          <label for="comments">Mensagem</label>
+                          <textarea name="mensagem" class="form-control" id="comments" cols="3" rows="5" placeholder="Escreva a sua mensagem…" title="Please enter your message (at least 10 characters)" style="height: 182px; margin-bottom: 23px;"></textarea>
                       </div>
+                      
+                      <div class="result"></div>
+                      <button name="submit" type="submit" class="col-xs-12 btn btn-lg" id="submit"> Enviar</button>
+                  </div>
 
-                      <!-- <div class="col-md-8 col-md-offset-4">
-                      </div> -->
               </form>
+
               </div>
+              <div class="col-sm-4 col-sm-offset-4">
+                    <ul class="socialNetwork" style="margin-left: 30%;">
+                      <li>
+                        <a href="#" class="tips" title="follow me on Facebook">
+                          <i class="icon-facebook-1 iconRounded"></i>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="tips" title="follow me on Twitter">
+                          <i class="icon-twitter-bird iconRounded"></i>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="tips" title="follow me on Google+">
+                          <i class="icon-gplus-1 iconRounded"></i>
+                        </a>
+                      </li>
+                    </ul>
+              </div>
+
           </div>
       </section>
       <!-- / contact -->

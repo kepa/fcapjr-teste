@@ -1083,24 +1083,49 @@ a.btnRight {
 }
 .image-0 {
 	background-image:url('../images/theme-pics/parallax-6.jpg');
+	background-repeat: no-repeat;
 }
 .image-1 {
-	background-image:url('../images/theme-pics/area1.jpg');
+	background: url('../images/theme-pics/area1.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .image-2 {
-	background-image:url('../images/theme-pics/area2.jpg');
+	background: url('../images/theme-pics/area2.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .image-3 {
-	background-image:url('../images/theme-pics/area3.jpg');
+	background: url('../images/theme-pics/area3.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .image-4 {
-	background-image:url('../images/theme-pics/area4.jpg');
+	background: url('../images/theme-pics/area4.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .image-5 {
-	background-image:url('../images/theme-pics/area5.jpg');
+	background: url('../images/theme-pics/area5.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .image-6 {
-	background-image: url('../images/theme-pics/parallax-6.jpg');
+	background:  url('../images/theme-pics/parallax-6.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 /*** MEDIA QUERIES ***/
 @media(max-width:767px) {
