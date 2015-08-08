@@ -4,12 +4,6 @@ from django.db import models
 # Area de membros (nome da area e membros)
 # membro (nome, cargo)
 
-class Empresa(models.Model):
-    quemSomos = models.TextField(verbose_name='QuemSomos');
-
-    def __unicode__(self):
-        return "Quem Somos"
-
 class Banner(models.Model):
 
     image = models.ImageField(
@@ -54,7 +48,12 @@ class Membro(models.Model):
     def __unicode__(self):
         return unicode(self.nome) or u''
 
-################## Missao, visao, valores ##################
+################## Description, Missao, visao, valores ##################
+class Description(models.Model):
+    text = models.TextField(verbose_name='QuemSomos');
+
+    def __unicode__(self):
+        return "Quem Somos"
 
 class Mission(models.Model):
 
