@@ -9,7 +9,7 @@ var equipeSection = document.getElementById('equipeSection');
 var title = document.getElementById('title');
 var description = document.getElementById('description');
 
-var tempTitles = ['posição queimada', 'area 1', 'area 2', 'area 3', 'area 4', 'area 5']
+var tempTitles = ['posição queimada', 'A empresa', 'area 2', 'area 3', 'area 4', 'area 5']
 var tempDescriptions = ['posição queimada', 'area 1 é a area mais massa de boa', 'area 2 nao fica pra tras da area 1', 'area 3 é a melhor!!!', 'area 4 top top!', 'area 5 é a mais comum']
 
 while(button){

@@ -9,8 +9,10 @@ from .models import *
 class IndexView(TemplateView):
     template_name = 'index.html'
 
-    def empresa(self):
-        return Empresa.objects.all()
+    def description(self):
+        desc = Description.objects.all()
+        if desc.count() > 0:
+            return desc[0]
 
     def banners(self):
     	return Banner.objects.all()

@@ -1003,13 +1003,13 @@ label.error {
 
 /*** icons ***/
 .iconRounded {
-	color:#538BAF;
-	border:1px solid #538BAF;
+	color:#000000;
+	border:1px solid #000000;
 }
 .iconRounded:hover,
 .color1 .iconRounded:hover,
 .boxIcon a:hover i {
-	background-color:#538BAF;
+	background-color:#000000;
 	color:#fff;
 	border-style: solid;
 }
