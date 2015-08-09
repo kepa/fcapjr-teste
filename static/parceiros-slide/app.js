@@ -1,3 +1,8 @@
+$(document).ready(function() {
+  $('#gallery').fullscreenGallery();                                                                                                                         
+         
+});
+
 $(document).ready(function(){
   $('.slider2').bxSlider({
     slideWidth: 650,

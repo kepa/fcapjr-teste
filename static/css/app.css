@@ -35,15 +35,19 @@
 	text-align: justify;
 }
 
-.bx-viewport{
+#servi .bx-viewport{
 	height: 100% !important;
+}
+
+#servi .bx-wrapper .bx-prev {
+	left: -16px;
 }
 
 /*.bx-wrapper{
 	margin-bottom: 20px;
 }*/
 
-.bx-pager{
+#servi .bx-pager{
 	display: none;
 }
 

@@ -14,14 +14,40 @@
 {% endblock scripts %}
 </head>
 <body id="page"class="activateAppearAnimation headerTransparent" style="background-color:white;">
-    <ul class="cb-slideshow">
-            <li><span></span><div></div></li>
-            <li><span></span><div></div></li>
-            <li><span></span><div></div></li>
-            <li><span></span><div></div></li>
-            <li><span></span><div></div></li>
-            <li><span></span><div></div></li>
-        </ul>
+       
+       <div id="gallery">
+        <div class="bigImages">
+            <ul>
+                <li><a href="http://activeden.net/user/sike/"><img src="{% static 'slide-home/images/slide1.jpg' %}" alt="the image" /></a></li>
+                <li><img src="{% static 'slide-home/images/slide2.jpg' %}" alt="the image" /></li>
+                <li><a href="http://codecanyon.net/user/sike" target="_blank"><img src="{% static 'slide-home/images/slide3.jpg' %}" alt="the image" /></a></li>                                      
+                <li><img src="{% static 'slide-home/images/slide4.jpg'%}" alt="the image" /></li>       
+                <li><a href="http://activeden.net/user/sike/"><img src="{% static 'slide-home/images/slide5.jpg' %}" alt="the image" /></a></li>
+                <li><img src="{% static 'slide-home/images/slide6.jpg' %}" alt="the image" /></li>
+                <li><a href="http://activeden.net/user/sike/"><img src="{% static 'slide-home/images/slide7.jpg' %}" alt="the image" /></a></li>
+                <li><img src="{% static 'slide-home/images/slide8.jpg' %}" alt="the image" /></li>
+                <li><a href="http://codecanyon.net/user/sike" target="_blank"><img src="{% static 'slide-home/images/slide9.jpg' %}" alt="the image" /></a></li>                                      
+                <li><img src="{% static 'slide-home/images/slide10.jpg' %}" alt="the image" /></li>                                   
+            </ul>
+        </div>
+                        
+        <div class="thumbnails">            
+            <ul>   
+                <li><img src="{% static 'slide-home/images/slide1.jpg '%}" alt="the thumbnail" /></li>
+                <li><img src="{% static 'slide-home/images/slide2.jpg' %}" alt="the thumbnail" /></li>
+                <li><img src="{% static 'slide-home/images/slide3.jpg' %}" alt="the thumbnail" /></li>                    
+                <li><img src="{% static 'slide-home/images/slide4.jpg' %}" alt="the thumbnail" /></li>                                        
+                <li><img src="{% static 'slide-home/images/slide5.jpg' %}" alt="the thumbnail" /></li>
+                <li><img src="{% static 'slide-home/images/slide6.jpg' %}" alt="the thumbnail" /></li>
+
+                <li><img src="{% static 'slide-home/images/slide7.jpg' %}" alt="the thumbnail" /></li>
+                <li><img src="{% static 'slide-home/images/slide8.jpg' %}" alt="the thumbnail" /></li>
+                <li><img src="{% static 'slide-home/images/slide9.jpg' %}" alt="the thumbnail" /></li>                    
+                <li><img src="{% static 'slide-home/images/slide10.jpg' %}" alt="the thumbnail" /></li>           
+            </ul>                                                               
+        </div>                                    
+    </div> 
+    
 
 <div id="globalWrapper">
 {%block menu %}{% endblock menu %}
@@ -62,8 +88,6 @@
     <!-- Scrool -->
     <script type="text/javascript"  src="{% static 'js/scroll.js' %}" /></script>
     <!-- <script type="text/javascript"  src="{% static 'js/jquery.js' %}" /></script> -->
-    <!-- end -->
-    <!-- Portfolio -->
     <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
         <script type="text/javascript" src="{% static 'portifolio/js/jquery.hoverdir.js' %}"></script>    
         <script type="text/javascript">
@@ -73,6 +97,11 @@
 
             });
         </script>
+
+    <!-- Slide home -->
+    <!-- <script type="text/javascript"  src="{% static 'slide-home/js/options.js' %}" /></script> -->
+    
+    <!-- End -->
 
 
 </body>

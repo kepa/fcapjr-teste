@@ -646,7 +646,7 @@ footer h4 {
 /* PAGES================================================== */
 
 .page-header {
-	border-bottom:1px solid rgba(1,1,1,0.075);
+	border-bottom:0px solid rgba(1,1,1,0.075);
 	/*background-color:#fff;*/
 }
 .page-header h1,.page-header p {
