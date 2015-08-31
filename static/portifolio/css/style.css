@@ -29,6 +29,10 @@
 	display: block;
 	position: relative;
 }
+
+.da-thumbs img{
+	width: 100%;
+}
 .da-thumbs li a {
 	overflow: hidden;
 }

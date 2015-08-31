@@ -56,12 +56,25 @@
 }
 
 #outros-parceiros .img-outros{
-	border-radius: 50%;
-	width: 10%;
+	border-radius: 0%;
+	width: 14%;
 	display: inline-block;
 }
 
 #outros-parceiros .item-outros-parceiros{
 	display: inline;
 	padding: 10px;
+}
+
+/*================= MODAL PORTFOLIO ======================*/
+.modal-header h4{
+  font-weight: bold;
+}
+.modal-body{
+  text-align: center;
+}
+
+.modal-body p{
+  text-align: justify;
+  margin-top: 20px;
 }

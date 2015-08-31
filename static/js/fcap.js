@@ -29,3 +29,7 @@ while(button){
 	buttonId += 1;
 	button = document.getElementById(buttonConstName + buttonId);
 }
+
+function activeClick(id){
+	
+}

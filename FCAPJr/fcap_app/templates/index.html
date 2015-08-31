@@ -4,7 +4,7 @@
 
 <main id="content">
   <header class="page-header bigHeader parallaxSection image-25" data-stellar-background-ratio="0.5" data-nekoanim="fadeIn" data-nekodelay="400">
-      
+
   </header>
   <!-- quem somos -->
   <section class="pt40 pb40" style="position:relative; background-color:white; margin-top:716px;">
@@ -27,7 +27,7 @@
                           <img class="img-circle img-responsive" src="{{ view.mission.image.url }}" alt="" /> 
                         </div>
                         <h2>{{ view.mission.title }}</h2>
-                        <p> {{ view.mission.description }}</p>
+                        <p style="text-align:justify"> {{ view.mission.description }}</p>
                       </a>
                   </article>
               </div>
@@ -38,7 +38,7 @@
                           <img class="img-circle img-responsive" src="{{ view.vision.image.url }}" alt="" />
                         </div>
                         <h2>{{ view.vision.title }}</h2>
-                        <p> {{ view.vision.description }}</p>
+                        <p style="text-align:justify"> {{ view.vision.description }}</p>
                       </a>
                   </article>
               </div>
@@ -50,7 +50,7 @@
                         </div>
                         <h2>{{ view.values.title }}</h2>
                         {% for value in view.values.valuesDescription.all %}
-                          <p> {{ value.description }}</p>
+                          <p style="text-align:justify"> {{ value.description }}</p>
                         {% endfor %}
                       </a>
                   </article>
@@ -194,8 +194,8 @@
           <section>
             <ul id="da-thumbs" class="da-thumbs">
               <li class="iventos">
-                <a href="http://dribbble.com/shots/505046-Menu">
-                  <img src="{% static 'portifolio/images/1.jpg' %}" />
+                <a data-toggle="modal" href="#myModal">
+                  <img src="{% static 'portifolio/images/evento1.jpg' %}" />
                   <div><span>Eita... Evento famoso</span></div>
                 </a>
               </li>
@@ -207,7 +207,7 @@
               </li>
               <li class="acon">
                 <a href="http://dribbble.com/shots/504197-Mr-Crabs">
-                  <img src="{% static 'portifolio/images/3.jpg' %}" />
+                  <img src="{% static 'portifolio/images/banner-feira.jpg' %}" />
                   <div><span>Ação de fazer o site da Fcap</span></div>
                 </a>
               </li>
@@ -271,6 +271,30 @@
       </div>
   </section>
   <!-- / eventos -->
+
+  <!-- POP UP'S PORTFOLIO -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Evento massa</h4>
+        </div>
+        <div class="modal-body">
+          <img src="{% static 'portifolio/images/evento1.jpg' %}">
+          <p>Descrição gigante falando como a empresa é grande e forte, ressaltando como são unidos, unidos por uma paixão, que é dar consultoria e por isso que são tão reconhecidos. Agora o texto fala um pouco do começo tenebroso da FCAP onde tinham apenas 10 membros. Agora como não tenho mais ideia pra enrolar aqui, vou só dizer que ao redor do buraco tudo é beira! valeu falou.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    <!-- END -->
   <!-- serviços -->
   <section id="servi" class="pt40 pb40">
       <div class="container">
@@ -283,7 +307,7 @@
 
           <div id="slide-parceiros" class="slider2">
             <div class="slide-item slide col-md-6">
-              <img src="{% static 'images/portfolio/vign2.jpg' %}" class="img-responsive img-parceiro">
+              <img src="{% static 'images/portfolio/1.jpg' %}" class="img-responsive img-parceiro">
               <div class="texto">
                 <p>
                   Ai você fala o seguinte: "- Mas vocês acabaram isso?" Vou te falar: -"Não, está em andamento!" Tem obras que "vai" durar pra depois de 2010. Agora, por isso, nós já não desenhamos, não começamos a fazer projeto do que nós "podêmo fazê"? 11, 12, 13, 14... Por que é que não?
@@ -292,7 +316,7 @@
             </div>
 
             <div class="slide-item slide col-md-6">
-              <img src="{% static 'images/portfolio/vign1.jpg' %}" class="img-responsive img-parceiro">
+              <img src="{% static 'images/portfolio/2.jpg' %}" class="img-responsive img-parceiro">
               <div class="texto">
                 <p>
                   Ai você fala o seguinte: "- Mas vocês acabaram isso?" Vou te falar: -"Não, está em andamento!" Tem obras que "vai" durar pra depois de 2010. Agora, por isso, nós já não desenhamos, não começamos a fazer projeto do que nós "podêmo fazê"? 11, 12, 13, 14... Por que é que não?
@@ -301,7 +325,7 @@
             </div>
             
             <div class="slide-item slide col-md-6">
-              <img src="{% static 'images/portfolio/vign3.jpg' %}" class="img-responsive img-parceiro">
+              <img src="{% static 'images/portfolio/3.jpg' %}" class="img-responsive img-parceiro">
               <div class="texto">
                 <p>
                   Ai você fala o seguinte: "- Mas vocês acabaram isso?" Vou te falar: -"Não, está em andamento!" Tem obras que "vai" durar pra depois de 2010. Agora, por isso, nós já não desenhamos, não começamos a fazer projeto do que nós "podêmo fazê"? 11, 12, 13, 14... Por que é que não?
@@ -310,7 +334,7 @@
             </div>
 
             <div class="slide-item slide col-md-6">
-              <img src="{% static 'images/portfolio/vign4.jpg' %}" class="img-responsive img-parceiro">
+              <img src="{% static 'images/portfolio/4.png' %}" class="img-responsive img-parceiro">
               <div class="texto">
                 <p>
                   Ai você fala o seguinte: "- Mas vocês acabaram isso?" Vou te falar: -"Não, está em andamento!" Tem obras que "vai" durar pra depois de 2010. Agora, por isso, nós já não desenhamos, não começamos a fazer projeto do que nós "podêmo fazê"? 11, 12, 13, 14... Por que é que não?
@@ -319,7 +343,7 @@
             </div>
 
             <div class="slide-item slide col-md-6">
-              <img src="{% static 'images/portfolio/vign5.jpg' %}" class="img-responsive img-parceiro">
+              <img src="{% static 'images/portfolio/5.jpg' %}" class="img-responsive img-parceiro">
               <div class="texto">
                 <p>
                   Ai você fala o seguinte: "- Mas vocês acabaram isso?" Vou te falar: -"Não, está em andamento!" Tem obras que "vai" durar pra depois de 2010. Agora, por isso, nós já não desenhamos, não começamos a fazer projeto do que nós "podêmo fazê"? 11, 12, 13, 14... Por que é que não?
@@ -328,7 +352,7 @@
             </div>
 
             <div class="slide-item slide col-md-6">
-              <img src="{% static 'images/portfolio/vign6.jpg' %}" class="img-responsive img-parceiro">
+              <img src="{% static 'images/portfolio/6.png' %}" class="img-responsive img-parceiro">
               <div class="texto">
                 <p>
                   Ai você fala o seguinte: "- Mas vocês acabaram isso?" Vou te falar: -"Não, está em andamento!" Tem obras que "vai" durar pra depois de 2010. Agora, por isso, nós já não desenhamos, não começamos a fazer projeto do que nós "podêmo fazê"? 11, 12, 13, 14... Por que é que não?
@@ -340,35 +364,35 @@
 
           <div id="outros-parceiros">
             <div class="item-outros-parceiros">
-              <img src="{% static 'images/portfolio/vign9.jpg' %}" class="img-responsive img-outros">
+              <img src="{% static 'images/portfolio/7.jpg' %}" class="img-responsive img-outros">
             </div>
 
             <div class="item-outros-parceiros">
-              <img src="{% static 'images/portfolio/vign9.jpg' %}" class="img-responsive img-outros">
+              <img src="{% static 'images/portfolio/8.jpg' %}" class="img-responsive img-outros">
             </div>
 
             <div class="item-outros-parceiros">
-              <img src="{% static 'images/portfolio/vign9.jpg' %}" class="img-responsive img-outros">
+              <img src="{% static 'images/portfolio/9.jpg' %}" class="img-responsive img-outros">
             </div>
 
             <div class="item-outros-parceiros">
-              <img src="{% static 'images/portfolio/vign9.jpg' %}" class="img-responsive img-outros">
+              <img src="{% static 'images/portfolio/10.jpg' %}" class="img-responsive img-outros">
             </div>
 
             <div class="item-outros-parceiros">
-              <img src="{% static 'images/portfolio/vign9.jpg' %}" class="img-responsive img-outros">
+              <img src="{% static 'images/portfolio/11.jpg' %}" class="img-responsive img-outros">
             </div>
 
             <div class="item-outros-parceiros">
-              <img src="{% static 'images/portfolio/vign9.jpg' %}" class="img-responsive img-outros">
+              <img src="{% static 'images/portfolio/12.jpg' %}" class="img-responsive img-outros">
             </div>
 
             <div class="item-outros-parceiros">
-              <img src="{% static 'images/portfolio/vign9.jpg' %}" class="img-responsive img-outros">
+              <img src="{% static 'images/portfolio/13.jpg' %}" class="img-responsive img-outros">
             </div>
 
             <div class="item-outros-parceiros">
-              <img src="{% static 'images/portfolio/vign9.jpg' %}" class="img-responsive img-outros">
+              <img src="{% static 'images/portfolio/14.jpg' %}" class="img-responsive img-outros">
             </div>
           </div>
               
@@ -400,7 +424,7 @@
         
         <div id="slide-parceiros">
           <div class="slide-item slide col-md-6 col-md-offset-3">
-            <img src="{% static 'images/portfolio/vign2.jpg' %}" class="img-responsive img-parceiro">
+            <img src="{% static 'images/portfolio/2.jpg' %}" class="img-responsive img-parceiro">
             <div class="texto">
               <p>
                 Ai você fala o seguinte: "- Mas vocês acabaram isso?" Vou te falar: -"Não, está em andamento!" Tem obras que "vai" durar pra depois de 2010. Agora, por isso, nós já não desenhamos, não começamos a fazer projeto do que nós "podêmo fazê"? 11, 12, 13, 14... Por que é que não?
@@ -447,22 +471,22 @@
                     <button class="col-xs-12 btn btn-lg" style="margin-bottom: 23px">Diagnóstico</button>
                   </div>
               </div>
-              <form method="POST" action="send-email/" id="contactfrm" role="form" novalidate="novalidate">
+              <form method="POST" action="#" id="contactfrm" role="form" novalidate="novalidate">
                 {% csrf_token %}
                   <div class="col-sm-4">
                       <div class="form-group">
                           <label for="name">Nome</label>
-                          <input type="text" class="form-control" name="name" id="name" placeholder="Digite seu nome" title="Please enter your name (at least 2 characters)">
+                          <input type="text" class="form-control" name="name" id="name" disabled placeholder="Digite seu nome" title="Please enter your name (at least 2 characters)">
                       </div>
                       
                       <div class="form-group">
                           <label for="email">Email</label>
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email" title="Please enter a valid email address">
+                          <input type="email" class="form-control" name="email" disabled id="email" placeholder="Digite seu email" title="Please enter a valid email address">
                       </div>
 
                       <div class="form-group">
                          <label for="phone">Motivo do contato</label>
-                         <select class="form-control" name="motivo">
+                         <select class="form-control" name="motivo" disabled>
                            <option value="">Selecione</option>
                            <option value="bench">Benchmarking</option>
                            <option value="outros">Outros</option>
@@ -475,11 +499,11 @@
                       
                       <div class="form-group">
                           <label for="comments">Mensagem</label>
-                          <textarea name="mensagem" class="form-control" id="comments" cols="3" rows="5" placeholder="Escreva a sua mensagem…" title="Please enter your message (at least 10 characters)" style="height: 182px; margin-bottom: 23px;"></textarea>
+                          <textarea disabled name="mensagem" class="form-control" id="comments" cols="3" rows="5" placeholder="Escreva a sua mensagem…" title="Please enter your message (at least 10 characters)" style="height: 182px; margin-bottom: 23px;"></textarea>
                       </div>
                       
                       <div class="result"></div>
-                      <button name="submit" type="submit" class="col-xs-12 btn btn-lg" id="submit"> Enviar</button>
+                      <button name="submit" class="col-xs-12 btn btn-lg" id="submit"> Enviar</button>
                   </div>
 
               </form>
