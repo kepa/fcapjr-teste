@@ -29,7 +29,10 @@ SECRET_KEY = 'vqtz^90h10f@n3p)4%dy7)g2^k=zhj=j#59r@aes2e!l&8(+k1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'fcapjr.com.br',
+    'www.fcapjr.com.br',
+]
 
 
 # Application definition
@@ -88,8 +91,13 @@ WSGI_APPLICATION = 'FCAPJr.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fcap_database',
+        'USER': 'fcap',
+        'PASSWORD': 'databasefcap',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'STORAGE_ENGINE': 'MyISAM'
     }
 }
 
@@ -112,11 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 
-STATIC_ROOT = config('STATIC_ROOT', default=BASE_DIR.child('staticfiles'))
+STATIC_ROOT = '/home/fcapjr1/webapps/static_fcap'
 
 STATIC_URL = config('STATIC_URL', default='/static/')
 
-STATICFILES_DIRS = (BASE_DIR.child('static'), )
+STATICFILES_DIRS = '/home/fcapjr1/webapps/static_fcap'
 
 #bower
 
