@@ -42,7 +42,7 @@ def deploy():
 def bootstrap():
     run('mkdir -p %s/lib/python2.7' % env.home)
     run('easy_install-2.7 pip')
-    run('pip install virtualenv virtualenvwrapper')
+    run('pip2.7 install virtualenv virtualenvwrapper')
 
 
 def install_app():
@@ -129,7 +129,7 @@ def reload_app(arg=None):
     if arg <> "quick":
         with cd(env.project_dir):
             _ve_run(env.project, "easy_install -i http://downloads.egenix.com/python/index/ucs4/ egenix-mx-base")
-            _ve_run(env.project, "pip install -r requirements.pip")
+            _ve_run(env.project, "pip install -r requirements.txt")
             _ve_run(env.project, "pip install -e ./")
             _ve_run(env.project, "manage.py syncdb")
             _ve_run(env.project, "manage.py collectstatic")
